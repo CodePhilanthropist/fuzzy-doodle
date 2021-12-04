@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rian Rey Barrioga</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-1">
+      <section class="section-1" id="bgImage"></section>
+      <section class="section-2">
+        <article>
+          <img
+            src="./images/rian.jpeg"
+            alt="Rian Rey Barriga"
+            id="profilePicture"
+          />
+        </article>
+        <article>
+          <section>
+            <h3 id="fullName">Rian Rey Barriga</h3>
+            <h5 id="position">Student Developer</h5>
+            <span id="address">Mandaue City, Cebu</span>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/CodePhilanthropist/css-complete-site"
+                >
+                  <i class="bx bxl-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/TheCalmCode">
+                  <i class="bx bxl-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/theguywhosaddictofloneliness">
+                  <i class="bx bxl-facebook-circle"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://telegram.me/RianBarriga">
+                  <i class="bx bxl-telegram"></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article>
+          <a href="#" onclick="changeProfileInfo()">
+            <i class="bx bx-dots-vertical-rounded"></i>Edit Profile
+          </a>
+          <a href="#" onclick="resetInfo()">
+            <i class="bx bx-dots-vertical-rounded"></i>Reset Info
+          </a>
+        </article>
+      </section>
+    </div>
+
+    <script>
+      const resetInfo = () => {
+        fullName = "Rian Rey Barriga";
+        picture = "images/rian.jpeg";
+        position = "Student Developer";
+        address = "Mandaue City, Cebu";
+
+        document.getElementById("fullName").innerHTML = fullName;
+        document.getElementById("profilePicture").src = picture;
+        document.getElementById("bgImage").style.backgroundImage = "url('images/sikatuna.jpg')";
+        document.getElementById("position").innerHTML = position;
+        document.getElementById("address").innerHTML = address;
+      };
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
